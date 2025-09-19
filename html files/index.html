@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/style.css">
+    <title>Travel Explorer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travel Explorer</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="../hero-bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>Discover Your Next Adventure</h1>
+                <p>Explore breathtaking destinations and plan your perfect trip.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search destinations...">
+                    <button>Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="filter-controls">
+                <input type="text" id="search-input" placeholder="Search destinations...">
+                <button id="search-button">Search</button>
+
+                <select id="region-filter">
+                    <option value="all">All Regions</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+
+                <select id="activity-filter">
+                    <option value="all">All Activities</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Relaxation">Relaxation</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Sightseeing">Sightseeing</option>
+                    <option value="Beach">Beach</option>
+                    <option value="Hiking">Hiking</option>
+                </select>
+
+                <select id="budget-filter">
+                    <option value="all">All Budgets</option>
+                    <option value="low">Low (< $500)</option>
+                    <option value="medium">Medium ($500 - $2000)</option>
+                    <option value="high">High (> $2000)</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="top-picks">
+            <h2>Top Picks</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <!-- Top Pick items will be loaded here -->
+                </div>
+                <button class="carousel-prev">&#10094;</button>
+                <button class="carousel-next">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-grid">
+                <!-- Destination cards will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="travel-tips">
+            <h2>Travel Tips</h2>
+            <div class="tips-grid">
+                <article class="tip-item">
+                    <h3>Packing Light for Europe</h3>
+                    <p>Discover essential tips for minimalist packing to make your European adventure hassle-free.</p>
+                </article>
+                <article class="tip-item">
+                    <h3>Budget Travel in Southeast Asia</h3>
+                    <p>Learn how to explore the wonders of Southeast Asia without breaking the bank.</p>
+                </article>
+                <article class="tip-item">
+                    <h3>Navigating Public Transport in Japan</h3>
+                    <p>A comprehensive guide to using Japan's efficient and extensive public transportation system.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="../js_files/script.js"></script>
+</body>
+</html>

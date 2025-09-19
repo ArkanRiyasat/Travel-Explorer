@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Explorer</title>
+    <link rel="stylesheet" href="../css_files/style.css">
+    <link rel="stylesheet" href="../css_files/destinations.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../html files/index.html" class="logo">Travel Explorer</a>
+                <ul class="nav-links">
+                    <li><a href="../html files/index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="../html files/about.html">About Us</a></li>
+                    <li><a href="../html files/contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-destinations">
+            <div class="hero-content">
+                <h1>Explore Your Next Adventure</h1>
+                <p>Discover breathtaking destinations and plan your perfect trip.</p>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section id="search-filter" class="section-padding">
+            <div class="container">
+                <h2>Find Your Ideal Destination</h2>
+                <div class="search-bar">
+                    <input type="text" id="destination-search" placeholder="Search destinations...">
+                    <button id="search-btn" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                </div>
+                <div class="filter-options">
+                    <select id="region-filter">
+                        <option value="all">All Regions</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="north-america">North America</option>
+                        <option value="south-america">South America</option>
+                        <option value="africa">Africa</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                    <select id="activity-filter">
+                        <option value="all">All Activities</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="culture">Culture</option>
+                        <option value="relaxation">Relaxation</option>
+                        <option value="food">Food & Drink</option>
+                        <option value="nature">Nature</option>
+                    </select>
+                    <select id="budget-filter">
+                        <option value="all">All Budgets</option>
+                        <option value="budget-friendly">Budget-Friendly</option>
+                        <option value="mid-range">Mid-Range</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips Section -->
+        <section class="travel-tips section-padding">
+            <div class="container">
+                <h2>Travel Tips & Guides</h2>
+                <div class="tips-grid">
+                    <!-- Tips will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+
+        <section id="explore-by-region" class="section-padding">
+            <div class="container">
+                <h2>Explore by Region</h2>
+                <div class="region-filters">
+                    <!-- Region filter buttons/cards will be dynamically loaded here -->
+                </div>
+                <div class="destination-grid">
+                    <!-- Destination cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="seasonal-picks" class="section-padding">
+            <div class="container">
+                <h2>Seasonal Picks</h2>
+                <div class="seasonal-cards">
+                    <!-- Seasonal pick cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="explore-by-experience" class="section-padding">
+            <div class="container">
+                <h2>Explore by Experience</h2>
+                <div class="experience-categories">
+                    <!-- Experience category cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="local-lens" class="section-padding">
+            <div class="container">
+                <h2>Local Lens: Unique Insights & Trivia</h2>
+                <div class="local-insights">
+                    <div class="insights-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="best-time-timeline" class="section-padding">
+            <div class="container">
+                <h2>Best Time to Visit Timeline</h2>
+                <div class="timeline-container">
+                    <!-- Timeline elements will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional: Destination Match Quiz -->
+        <section id="destination-quiz" class="section-padding">
+            <div class="container">
+                <h2>Find Your Perfect Destination</h2>
+                <button id="start-quiz-btn">Start Quiz</button>
+                <div id="quiz-container">
+                    <div class="quiz-result"></div>
+                    <div class="quiz-recommendations"></div>
+                    <div class="quiz-question"></div>
+                    <div class="quiz-options"></div>
+                    <button class="quiz-restart-button">Restart Quiz</button>
+                    <!-- Quiz questions and results will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js_files/script.js"></script>
+    <script src="../js_files/destinations.js"></script>
+</body>
+</html>
